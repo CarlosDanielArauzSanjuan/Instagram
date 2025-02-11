@@ -4,8 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-/*--------------------------------- Header ----------------------------------*/
+/************* Header *****************/
 header{
     background: var(--lorem-container);
     width: 100%;
@@ -15,16 +14,15 @@ header{
     align-items: center;
     padding: 0 14px;
 }
-.div_logo {
-
-}
+/* .div_logo {
+} */
 .div_logo img{
-    position: relative; /*lorem*/
+    position: relative;  /* lorem */
     width: 128px;
     height: 30px;
     background: var(--lorem-item);
 }
-/*--------------------------------- Lorem ----------------------------------*/
+/***************** lorem **************/
 .div_logo img::after{
     content: "128 x 30";
     font-family: sans-serif;
@@ -36,7 +34,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+/* **************************************/
 .div_options {
     width: 120px;
     height: 24px;
@@ -47,10 +45,10 @@ header{
 .div_options img{
     width: 24px;
     height: 24px;
-    position: relative; /*Lorem*/
+    position: relative;/* lorem */
     background: var(--lorem-item-box);
 }
-/*--------------------------------- Lorem ----------------------------------*/
+/***************** lorem **************/
 .div_options img::after{
     content: "24 x 24";
     font-family: sans-serif;
@@ -62,7 +60,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-/*---------------- nav ------------------*/
+/* **************************************/
+/************* nav *****************/
 .nav_storyTray {
     background: var(--lorem-container);
     width: 100%;
@@ -107,7 +106,7 @@ header{
     width: 100%;
     height: 100%;
 }
-/*--------------------------------- Lorem ----------------------------------*/
+/***************** lorem **************/
 .div_storyUser-container::after{
     content: "64 x 54";
     font-family: sans-serif;
@@ -120,6 +119,8 @@ header{
     justify-content: center;
     align-items: center;
 }
+/* **************************************/
+/* **************************************/
 .div_storyUser span{
     background: var(--lorem-item-box);
     width: 59.64px;
@@ -129,9 +130,212 @@ header{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/************* Main *****************/
+.section_post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 390px 212px;
+    grid-template-areas: "avatarInfo postOptions"
+                         "post post"
+                         "postInfo postInfo";
+}
 
-/*---------------- footer ------------------*/
-.footer_navigatorBar{
+.div_avatarInfo{
+    grid-area: avatarInfo;
+    background: var(--lorem-container);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 13px;
+}
+.div_avatarInfo-container{
+    width: 37.32px;
+    height: 37.32px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    background: 
+    linear-gradient(var(--lorem-item-box),var(--lorem-item-box)) padding-box,  
+    linear-gradient(225deg, #c8c8c8, #e9e9e9, black) border-box;
+    background-clip: padding-box, border-box;
+}
+.div_avatarInfo-container::before{
+    content: " ";
+    width: 30.32px;
+    height: 30.32px;
+    position: absolute;
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+}
+.div_avatarInfo-container img{
+    width: 100%;
+    height: 100%;
+}
+/***************** lorem **************/
+.div_avatarInfo-container::after{
+    content: "30 x 30";
+    font-family: sans-serif;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .div_avatarInfo-perfil{
+
+}
+.div_avatarInfo-perfil h4{
+
+}
+.div_avatarInfo-perfil span{
+
+} */
+.div_post{
+    grid-area: post;
+    background: var(--lorem-container);
+}
+.div_post img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative; /* lorem */
+    background: var(--lorem-item);
+}
+/***************** lorem **************/
+.div_post img::after{
+    content: "390 x 390";
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: var(--lorem-item-box);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+.div_postOptions{
+    grid-area: postOptions;
+    background: var(--lorem-container);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 13px;
+}
+.div_postOptions a {
+    width: 24px;
+    height: 24px;
+    position: relative;  /* lorem */
+    background: var(--lorem-item);
+}
+/***************** lorem **************/
+.div_postOptions a img::after{
+    background: var(--lorem-item-box);
+    content: "24 x 24";
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+.div_postInfo{
+    grid-area: postInfo;
+    background: var(--lorem-container);
+    padding: 0 13px;
+}
+
+.div_postInfo span{
+    display: block;
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+.div_postInfo p{
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+/* .div_postInfo p strong{
+    
+} */
+.div_postInfo form{
+    padding-top: 10px;
+    background: var(--lorem-item);
+}
+/* .div_postInfo form textarea{
+    
+} */
+.div_postInfo-icons {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div_leftIcons {
+    background: var(--lorem-item);
+    display: flex;
+    gap: 12px
+}
+.div_leftIcons a img{
+    width: 24px;
+    height: 24px;
+    position: relative; /* lorem */
+}
+/***************** lorem **************/
+.div_leftIcons a img::after{
+    background: var(--lorem-item-box);
+    content: "24 x 24";
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+/* .div_leftIcons a{
+}
+.div_leftIcons a img{
+} */
+.div_rigthIcons {
+    background: var(--lorem-item);
+}
+.div_rigthIcons a img{
+    width: 24px;
+    height: 24px;
+    position: relative; /* lorem */
+}
+/***************** lorem **************/
+.div_rigthIcons a img::after{
+    background: var(--lorem-item-box);
+    content: "24 x 24";
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **************************************/
+/* .div_rigthIcons a{
+}
+.div_rigthIcons a img{
+} */
+
+/************* Footer *****************/
+.footer_navigationBar{
     width: 100%;
     height: 56px;
     background: var(--lorem-container);
@@ -139,19 +343,20 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    padding: 0 15px ;
+    padding: 0 15px;
 }
-.footer_navigatorBar a{
-}
-.footer_navigatorBar a img{
+/* .footer_navigationBar a{
+} */
+.footer_navigationBar a img{
     width: 24px;
     height: 24px;
-    position: relative;  /* lorem */
+    position: relative; /* lorem */
 }
-/*---------------- Lorem ------------------*/
-.footer_navigatorBar img::after{
+
+/***************** lorem **************/
+.footer_navigationBar a img::after{
     content: "24 x 24";
     font-family: sans-serif;
     background: var(--lorem-item);
@@ -163,3 +368,4 @@ header{
     justify-content: center;
     align-items: center;
 }
+/* **************************************/
