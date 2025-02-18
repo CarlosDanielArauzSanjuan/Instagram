@@ -1,5 +1,5 @@
 :root{
-    --lorem-item: transparent;
+    --lorem-item: transparent ;
     --lorem-container: transparent;
     --lorem-item-box: transparent;
 
@@ -8,7 +8,7 @@
     --color-3:#6E6E6E;
     --color-4:#DDDDDD;
     --color-5:#FE0135;
-    --color-6:#999999;
+    --color-6:#999999ba;
     --color-7:hsla(0, 0%, 0%, 0.500);
     --color-8:hsla(0, 0%, 0%, 0.100);
     --color-8: #1FA1FF;
@@ -17,33 +17,33 @@
 }
 @font-face {
     font-family: "sf-ui-display-black";
-    src: url(/storage/font/sf-ui-display-black.otf);
+    src: url(../storage/font/sf-ui-display-black.otf);
 }
 @font-face {
     font-family: "sf-ui-display-bold";
-    src: url(/storage/font/sf-ui-display-bold.otf);
+    src: url(../storage/font/sf-ui-display-bold.otf);
 }
 @font-face {
     font-family: "sf-ui-display-heavy";
-    src: url(/storage/font/sf-ui-display-cufonfonts/sf-ui-display-heavy.otf);
+    src: url(../storage/font/sf-ui-display-heavy.otf);
 }
 @font-face {
     font-family: "sf-ui-display-light";
-    src: url(/storage/font/sf-ui-display-light.otf);
+    src: url(../storage/font/sf-ui-display-light.otf);
 }
 @font-face {
     font-family: "sf-ui-display-medium";
-    src: url(/storage/font/sf-ui-display-cufonfonts/sf-ui-display-medium.otf);
+    src: url(../storage/font/sf-ui-display-medium.otf);
 }
 @font-face {
     font-family: "sf-ui-display-semibold";
-    src: url(/storage/font/sf-ui-display-cufonfonts/sf-ui-display-semibold.otf);
+    src: url(../storage/font/sf-ui-display-semibold.otf);
 }
 @font-face {
     font-family: "sf-ui-display-thin";
-    src: url(/storage/font/sf-ui-display-cufonfonts/sf-ui-display-thin.otf);
+    src: url(../storage/font/sf-ui-display-thin.otf);
 }
 @font-face {
     font-family: "sf-ui-display-ultralight";
-    src: url(/storage/font/sf-ui-display-cufonfonts/sf-ui-display-ultralight.otf);
+    src: url(../storage/font/sf-ui-display-ultralight.otf);
 }

@@ -14,41 +14,35 @@ header{
     align-items: center;
     padding: 0 14px;
 }
-
-.div_logo {
+.div__logo {
     display: flex;
     align-items: center;
     gap: 3px;
 } 
-
-.div_logo img:nth-child(1){
-  
+.div__logo img:nth-child(1){
     width: 128px;
     height: 30px;
     background: var(--lorem-item-box);
 }
-
-.div_logo img:nth-child(2){
+.div__logo img:nth-child(2){
     width: 16px;
     height: 16px;
 }
 
-.div_options {
+.div__options {
     width: 120px;
     height: 24px;
     background: var(--lorem-item);
     display: flex;
     gap: 24px;
 }
-
-.div_options img{
+.div__options img{
     width: 24px;
     height: 24px;
-    
     background: var(--lorem-item-box);
 }
 
-.nav_storyTray {
+.nav__storyTray {
     background: var(--lorem-container);
     border-bottom: 2px solid var(--color-4);
     width: 100%;
@@ -59,8 +53,7 @@ header{
     overflow-x: scroll;
     gap: 12px;
 }
-
-.nav_storyTray > .div_storyUser {
+.nav__storyTray > .div__storyUser {
     flex: 1;
     background: var(--lorem-item);
     min-width: 72px;
@@ -69,10 +62,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.div_storyUser-container{
+.div__storyUser-container{
     width: 69.63px;
     height: 69.63px;
     overflow: hidden;
@@ -84,14 +76,23 @@ header{
     var(--color-gradient) border-box;
     background-clip: padding-box, border-box;
 }
-
-.div_storyUser-container.states {
+.div__storyUser3-container{
+    width: 69.63px;
+    height: 69.63px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    border: 3.5px solid transparent;
+    background: 
+    linear-gradient(var(--lorem-item-box),var(--lorem-item-box)) padding-box,rgb(14, 197, 14) border-box;
+    background-clip: padding-box, border-box;
+}
+.div__storyUser-container.states {
     background: none;
     background-clip: none;
     border-radius: 0px;
 }
-
-.div_storyUser-container::before{
+.div__storyUser-container::before{
     content: " ";
     width: 60.63px;
     height: 60.63px;
@@ -99,8 +100,7 @@ header{
     border: 2.5px solid #fff;
     border-radius: 100%;
 }
-
-.states.div_storyUser-container::before{
+.states.div__storyUser-container::before{
     border: none;
     width: 20px;
     height: 20px;
@@ -108,17 +108,15 @@ header{
     bottom: 0;
     background-image: url(../storage/img/button-plus.svg);
 }
-
-.div_storyUser-container.states img{
+.div__storyUser-container.states img{
     border-radius: 100%;
 }
-
-.div_storyUser-container img{
+.div__storyUser-container img{
     width: 100%;
     height: 100%;
 }
 
-.div_storyUser span{
+.div__storyUser span{
     background: var(--lorem-item-box);
     width: 100%;
     height: 25.75px;
@@ -131,16 +129,15 @@ header{
     font-size: 11.5px;
     font-family: "sf-ui-display-light";
     color: var(--color-1);
-
+    
 }
-
-.div_storyUser-container.states +span{
+.div__storyUser-container.states +span{
     color: var(--color-3);
     font-weight: normal
 
 }
 
-.section_post{
+.section__post{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px 390px 212px;
@@ -149,7 +146,7 @@ header{
                          "postInfo postInfo";
 }
 
-.div_avatarInfo{
+.div__avatarInfo{
     grid-area: avatarInfo;
     background: var(--lorem-item);
     display: flex;
@@ -157,8 +154,7 @@ header{
     gap: 8px;
     padding-left: 13px;
 }
-
-.div_avatarInfo-container{
+.div__avatarInfo-container{
     width: 37.32px;
     height: 37.32px;
     overflow: hidden;
@@ -170,8 +166,7 @@ header{
     var(--color-gradient) border-box;
     background-clip: padding-box, border-box;
 }
-
-.div_avatarInfo-container::before{
+.div__avatarInfo-container::before{
     content: " ";
     width: 31.32px;
     height: 31.32px;
@@ -179,34 +174,30 @@ header{
     border: 1.5px solid #fff;
     border-radius: 100%;
 }
-
-.div_avatarInfo-container img{
+.div__avatarInfo-container img{
     width: 100%;
     height: 100%;
 }
 
-.div_avatarInfo-perfil h4{
+.div__avatarInfo-perfil h4{
     color: var(--color-1);
     font-size: 12px;
     font-family: "sf-ui-display-bold";
     background: var(--lorem-item-box);
 }
-
-.div_avatarInfo-perfil span{
+.div__avatarInfo-perfil span{
     color: var(--color-1);
     font-size: 11px;
     font-family: "sf-ui-display-light";
     background: var(--lorem-item-box);
 
 }
-
-.div_post{
+.div__post{
     grid-area: post;
     background: var(--lorem-container);
     position: relative;
 }
-
-.div_post::before {
+.div__post::before {
     content: url(../storage/img/tags.svg);
     position: absolute;
     bottom: 10px;
@@ -215,16 +206,15 @@ header{
     height: 24px;
     background: var(--lorem-container);
 }
-
-.div_post img{
+.div__post img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     background: var(--lorem-item);
 }
 
-.div_postOptions{
+
+.div__postOptions{
     grid-area: postOptions;
     background: var(--lorem-container);
     display: flex;
@@ -232,18 +222,15 @@ header{
     align-items: center;
     padding-right: 13px;
 }
-
-.div_postOptions a {
+.div__postOptions a {
     width: 24px;
     height: 24px;
-
     background: var(--lorem-item);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.div_postOptions a img::after{
+.div__postOptions a img::after{
     background: var(--lorem-item-box);
     content: "24 x 24";
     font-family: sans-serif;
@@ -255,77 +242,103 @@ header{
     justify-content: center;
     align-items: center;
 }
-
-.div_postInfo{
+.div__postInfo{
     grid-area: postInfo;
     background: var(--lorem-container);
     padding: 0 13px;
 }
 
-.div_postInfo span{
+.div__postInfo span{
     display: block;
     padding-top: 10px;
     background: var(--lorem-item);
     font-family: "sf-ui-display-bold";
 }
-
-.div_postInfo p+span{
+.div__postInfo p+span{
     color: var(--color-3);
     font-size: 14px;
     font-family: "sf-ui-display-light";
 }
-
-.div_postInfo p{
+.div__postInfo p{
     padding-top: 10px;
     background: var(--lorem-item);
     font-family: "sf-ui-display-light";
     font-weight: 900;
     font-size: 14px;
 }
- .div_postInfo p strong{
+ .div__postInfo p strong{
     font-family: "sf-ui-display-bold";
 } 
-
-.div_postInfo form{
+.div__postInfo form{
     padding-top: 10px;
-    background: var(--lorem-item);
-}
-
-.div_postInfo form textarea{
-    resize: none;
     height: 38px;
+    background: var(--lorem-item);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
+
+}
+.div__postInfo img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+}
+.div__postInfo form textarea{
+    resize: none;
     width: 100%;
+    height: 24px;
+    padding: 3.5px;
+    border: none;
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
+}
+.div__timePost span{
+    font-family: "sf-ui-display-light";
+    font-size: 14px;
+    color: var(--color-3);
+}
+.commentImage {
+    border-radius: 100%;
+}
+.div__postInfo form div{
+    display: flex;
+    gap: 14px;
+    object-fit: cover;
 }
 
-.div_postInfo-icons {
+
+.div__postInfo-icons {
     width: 100%;
     height: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.div_leftIcons {
+.div__leftIcons {
     background: var(--lorem-item);
     display: flex;
     gap: 12px
 }
-
-.div_leftIcons a img{
+.div__leftIcons a img{
     width: 24px;
     height: 24px;
 }
 
-.div_rigthIcons {
+.div__rigthIcons {
     background: var(--lorem-item);
 }
-
-.div_rigthIcons a img{
+.div__rigthIcons a img{
     width: 24px;
     height: 24px;
 }
 
-.footer_navigationBar{
+.footer__navigationBar{
     border-top: 2px solid var(--color-4);
 
     width: 100%;
@@ -340,28 +353,22 @@ header{
     padding: 0 15px;
 }
 
- .footer_navigationBar a{
-} 
-
-.footer_navigationBar a:last-child img{
+.footer__navigationBar a:last-child img{
     border-radius: 100%;
 } 
-
-.footer_navigationBar a img{
+.footer__navigationBar a:last-child {
+    position: relative;
+}
+.footer__navigationBar a:last-child::after{
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: var(--color-5);
+} 
+.footer__navigationBar a img{
     width: 24px;
     height: 24px;
-    position: relative; 
-}
-
-.footer_navigationBar a img::after{
-    content: "24 x 24";
-    font-family: sans-serif;
-    background: var(--lorem-item);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
